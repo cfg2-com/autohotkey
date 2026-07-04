@@ -8,6 +8,8 @@ These are a set of AutoHotKey scripts to help make your life easier
 * Set `main.ahk` to run on boot
 * Optionally add your own scripts to a repository and clone them into `private`:
     * `git clone <YOUR_PRIVATE_REPO_URL> private`
+* To update your private repo code run:
+    * `git -C private pull`
 
 ## Hotkeys ##
 

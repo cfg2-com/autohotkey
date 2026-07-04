@@ -44,3 +44,5 @@ GroupAdd("MS_OUTLOOK", "ahk_class rctrl_renwnd32")
 #Include "core\docker.ahk"
 #Include "core\linux.ahk"
 #Include "core\workstation.ahk"
+
+#Include "*i private\main.ahk"
