@@ -33,7 +33,7 @@ GroupAdd("MS_OUTLOOK", "ahk_class rctrl_renwnd32")
 
 ; General purpose commands/scripts
 ; Feel free to comment out a particular script if you don't want to use it
-#Include "core\emoji.ahk"
+#Include "core\text-replacements.ahk"
 #Include "core\datetime.ahk"
 #Include "core\media.ahk"
 #Include "core\web.ahk"
