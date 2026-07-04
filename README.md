@@ -6,13 +6,10 @@ These are a set of AutoHotKey scripts to help make your life easier
 
 * Clone the repository to your location of choice
 * Set `main.ahk` to run on boot
-* Optionally add your own scripts to a repository and pull them in as a submodule
-
-### Pull in private script(s)
-
-```
-git submodule add https://github.com/yourusername/my-private-ahk-scripts.git private
-```
+* Optionally add your own scripts to a repository and pull them in as a submodule:
+    * `cp .gitmodules.template .gitmodules`
+    * Update `.gitmodules` with the URL for your repo
+    * `git submodule update --init`
 
 ## Hotkeys ##
 
