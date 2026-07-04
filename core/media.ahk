@@ -11,20 +11,20 @@
 ;--------------------------------------------
 
 ; Play/pause toggle
-^!+P::Send, {Media_Play_Pause}
+^!+P::Send("{Media_Play_Pause}")
 
 ; Volume Mute/unmute toggle
-^!+V::Run, nircmd.exe mutesysvolume 2
+^!+V::Run("nircmd.exe mutesysvolume 2")
 
 ; Mic Mute/unmute toggle
-^!+M::Run, nircmd.exe mutesysvolume 2 microphone
+^!+M::Run("nircmd.exe mutesysvolume 2 microphone")
 
 ; Volume up/down
-^!+Up::Send, {Volume_Up}
-^!+WheelUp::Send, {Volume_Up}
-^!+Down::Send, {Volume_Down}
-^!+WheelDown::Send, {Volume_Down}
+^!+Up::Send("{Volume_Up}")
+^!+WheelUp::Send("{Volume_Up}")
+^!+Down::Send("{Volume_Down}")
+^!+WheelDown::Send("{Volume_Down}")
 
 ; Next/prev
-^!+Right::Send, {Media_Next}
-^!+Left::Send, {Media_Prev}
+^!+Right::Send("{Media_Next}")
+^!+Left::Send("{Media_Prev}")

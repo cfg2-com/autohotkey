@@ -9,13 +9,13 @@
 ; https://docs.docker.com/engine/reference/commandline/docker/
 ;--------------------------------------------
 
-:O:#dkopts::
-SendInput {#}General: dkls, dklsa, dkstopped, dkrma, dkrestarta, dkstopa, dkprune, dkstats, dksys{enter}
-SendInput {#}Containers: dkcrm, dkcbash, dkcrestart, dkclogtail, dkclog, dkcloguse, dkclogtrun, dkcin{enter}
-SendInput {#}Images: dkimg, dkimgls, dkimgprune, dkimgclean, dkimgpull, dkimgpulla{enter}
-SendInput {#}Volumes: dkvol, dkvolprune{enter}
-SendInput {#}Compose: dkcomrecreate, dkcomstart, dkcomstop, dkcomrestart{enter}
-return
+:O:#dkopts::{
+    SendInput("{#}General: dkls, dklsa, dkstopped, dkrma, dkrestarta, dkstopa, dkprune, dkstats, dksys{enter}")
+    SendInput("{#}Containers: dkcrm, dkcbash, dkcrestart, dkclogtail, dkclog, dkcloguse, dkclogtrun, dkcin{enter}")
+    SendInput("{#}Images: dkimg, dkimgls, dkimgprune, dkimgclean, dkimgpull, dkimgpulla{enter}")
+    SendInput("{#}Volumes: dkvol, dkvolprune{enter}")
+    SendInput("{#}Compose: dkcomrecreate, dkcomstart, dkcomstop, dkcomrestart{enter}")
+}
 
 :O:.dkls::sudo docker ps
 :O:.dklsa::sudo docker ps -a
@@ -41,11 +41,11 @@ return
 
 ;---Image commands---
 :O:.dkimg::sudo docker images
-:O:.dkimgls::sudo docker images --format "{{}{{}.Repository{}}{}}:{{}{{}.Tag{}}{}}" | grep -v '<none>'
+:O:.dkimgls::sudo docker images --format "{{.Repository}}:{{.Tag}}" | grep -v '<none>'
 :O:.dkimgprune::sudo docker image prune -af
 :O:.dkimgclean::sudo docker rmi $(sudo docker images --filter "dangling=true" -q --no-trunc)
 :O:.dkimgpull::sudo docker pull [image]
-:O:.dkimgpulla::for image in $(sudo docker images --format "{{}{{}.Repository{}}{}}:{{}{{}.Tag{}}{}}" | grep -v '<none>'); do sudo docker pull $image; done;
+:O:.dkimgpulla::for image in $(sudo docker images --format "{{.Repository}}:{{.Tag}}" | grep -v '<none>'); do sudo docker pull $image; done;
 
 ;---Volume commands---
 :O:.dkvol::sudo docker volume ls
