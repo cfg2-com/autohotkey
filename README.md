@@ -5,7 +5,14 @@ These are a set of AutoHotKey scripts to help make your life easier
 ## How do I get set up? ##
 
 * Clone the repository to your location of choice
-* From a command line, run "install.bat [fullDestPath] [workstationName]"
+* Set `main.ahk` to run on boot
+* Optionally add your own scripts to a repository and pull them in as a submodule
+
+### Pull in private script(s)
+
+```
+git submodule add https://github.com/yourusername/my-private-ahk-scripts.git private
+```
 
 ## Hotkeys ##
 
