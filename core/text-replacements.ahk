@@ -24,6 +24,7 @@
 :O:.box::🥊 Boxing{Space}
 :O:.buy::💸{Space}
 :O:.call::📞{Space}
+:O:.cancel::❌{Space}
 :O:.chat::💬{Space}
 :O:.clean::🧹{Space}
 :O:.co::👥{Space}
@@ -74,6 +75,7 @@
 :O:.play::🎭{Space}
 :O:.proj::🎯{Space}
 :O:.prompt::🤖{Space}
+:O:.quit::❌{Space}
 :O:.re::🏠{Space}
 :O:.read::📕{Space}
 :O:.redflag::🚩{Space}
