@@ -12,7 +12,7 @@
 :O:.act::✔️{Space}
 :O:.ai::✔️{Space}
 :O:.aip::🤖{Space}
-:O:.appt::🗓{Space}
+:O:.appt::🗓️{Space}
 :O:.abend::💣{Space}
 :O:.baseball::⚾{Space}
 :O:.basketball::🏀{Space}
@@ -65,7 +65,7 @@
 :O:.iam::Busy with another commitment right now. Will review/get back to you as appropriate.
 :O:.im::💬{Space}
 :O:.inc::💣{Space}
-:O:.info::ℹ{Space}
+:O:.info::ℹ️{Space}
 :O:.lift::🏋️ Lift
 :O:.listen::🎧{Space}
 :O:.liza::🐶{Space}
