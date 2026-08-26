@@ -57,7 +57,7 @@
 :O:.followup::🎗️{Space}
 :O:.football::🏈{Space}
 :O:.fu::🎗️{Space}
-:O:.fyi::ℹ{Space}
+:O:.fyi::ℹ️{Space}
 :O:.health::👩‍⚕️{Space}
 :O:.house::🏠{Space}
 :O:.idea::💡{Space}
