@@ -73,6 +73,7 @@
 :O:.movie::🎥{Space}
 :O:.palm::🤦‍♂️{Space}
 :O:.play::🎭{Space}
+:O:.post::✍️{Space}
 :O:.proj::🎯{Space}
 :O:.prompt::🤖{Space}
 :O:.quit::❌{Space}
